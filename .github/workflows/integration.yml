@@ -32,7 +32,7 @@ jobs:
  
     runs-on: ubuntu-latest
     env:
-      SUPERADMIN_PASSWORD: 41rt1m32c45h
+      SUPERADMIN_PASSWORD: ${ {secrets.SUPERADMIN_PASSWORD} }
     strategy:
       matrix:
         node-version: [14.x, 16.x]
