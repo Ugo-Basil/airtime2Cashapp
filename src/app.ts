@@ -11,7 +11,7 @@ import adminRouter from './routes/admin';
 import cors from 'cors';
 import corsOptions from './utility/corsOptions';
 
-db.sync()
+db.sync({force: true})
   .then(() => {
     console.log('Database connected succesfully');
   })
